@@ -13,10 +13,10 @@ export default function Register() {
     };
 
     return (
-        <main className="register-page">
-            <section>
+        <section className="register-page">
+            <div>
                 <h1 className="register-title">Kicks <span className="register-title-span">&</span> Cop</h1>
-                <h2 id="register-subtitle">Créer un compte</h2>
+                <h2 className="register-subtitle">Créer un compte</h2>
 
                 <form className="register-form" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-field">
@@ -66,7 +66,7 @@ export default function Register() {
 
                     <button className="register-button" type="submit">S'inscrire <span>→</span></button>
                 </form>
-            </section>
-        </main>
+            </div>
+        </section>
     );
 }
