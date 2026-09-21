@@ -81,7 +81,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   margin-top: 8px;
   padding: 15px 18px;
   border: 0;
@@ -91,6 +90,7 @@
   cursor: pointer;
   font: inherit;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .register-button:hover {
