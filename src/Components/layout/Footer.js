@@ -1,7 +1,17 @@
+import PhoneIcon from '../../assets/images/icons/phone-icon.png';
 function Footer() {
     return (
         <footer className="footer">
-            <p>&copy; 2026 Kicks & Cop</p>
+            <div className="footer-column">
+                <h3>À propos de KICK <span className="footer-span">&</span> COP</h3>
+                <p>KICK & COP est votre destination incontournable pour trouver des chaussures élégantes, confortables et adaptées à toutes les occasions. Nous sélectionnons avec soin des modèles de qualité qui allient style et durabilité.</p>
+            </div>
+
+            <div className="footer-column">
+                <img src={PhoneIcon} alt="Phone Icon" className="phone-icon" />
+                <h3>Nous conctater</h3>
+                <p>Adresse e-mail: <a href="mailto:KICK&COP@GMAIL.COM">KICK&COP@GMAIL.COM</a></p>
+            </div>
 
             <div className="social-icons">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -23,6 +33,8 @@ function Footer() {
                     <i className="fab fa-tiktok"></i>
                 </a>
             </div>
+
+            <p>&copy; 2026 Kicks & Cop</p>
         </footer>
     );
 }
