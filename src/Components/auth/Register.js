@@ -65,6 +65,7 @@ export default function Register() {
                     </div>
 
                     <button className="register-button" type="submit">S'inscrire <span>→</span></button>
+                    <button className="register-button" type="button"><span>←</span>Se connecter</button>
                 </form>
             </div>
         </section>
