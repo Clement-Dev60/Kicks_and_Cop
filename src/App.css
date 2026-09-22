@@ -1,0 +1,18 @@
+:root{
+  --ink: #000000;
+}
+
+footer{
+  border-top: 1px solid #d2cfbd;
+  background-color: #f3eeeee4;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+footer span {
+  color: #f15a24;
+}

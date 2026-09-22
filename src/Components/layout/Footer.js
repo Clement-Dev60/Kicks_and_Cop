@@ -1,8 +1,10 @@
-import PhoneIcon from '../../assets/images/icons/phone-icon.png';
+import PhoneIcon from '../../Assets/images/icons/phone-icon.png';
+import QuestionIcon from '../../Assets/images/icons/question-mark-icon.png';
 function Footer() {
     return (
         <footer className="footer">
             <div className="footer-column">
+                <img src={QuestionIcon} alt="Question Icon" className="question-icon" />
                 <h3>À propos de KICK <span className="footer-span">&</span> COP</h3>
                 <p>KICK & COP est votre destination incontournable pour trouver des chaussures élégantes, confortables et adaptées à toutes les occasions. Nous sélectionnons avec soin des modèles de qualité qui allient style et durabilité.</p>
             </div>
