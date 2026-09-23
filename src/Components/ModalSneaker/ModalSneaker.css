@@ -1,0 +1,162 @@
+/* Overlay */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modal--closing {
+  animation: fadeOut 0.25s ease forwards;
+  pointer-events: none;
+}
+
+.modal--closing > div {
+  animation: scaleOut 0.25s ease forwards;
+}
+
+/* Carte du popup */
+.modal > div {
+  background: #ffffff;
+  width: 90%;
+  height: 90%;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 2px solid #f4f1e7;
+
+  animation: scaleIn 0.35s ease forwards;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(27, 175, 255);
+  box-shadow: 0 0 0 3px rgba(27, 175, 255, 0.2);
+}
+
+/* Bouton */
+.submit {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, rgb(27, 175, 255), rgb(0, 140, 255));
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(27, 175, 255, 0.4);
+}
+
+/* Texte */
+.date {
+  font-style: italic;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.desc {
+  font-style: oblique;
+  color: #444;
+}
+
+.closeButton {
+  width: 3rem;
+  border-radius: 20%;
+  border: none;
+  color: white;
+  font-size: xx-large;
+  background-color: red;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  position: relative;
+  left: 96%;
+  top: 1%;
+}
+.closeButton:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(196, 43, 43, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.modalImage {
+  width: 30rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-color: red;
+  align-items: center;
+}

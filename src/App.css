@@ -6,4 +6,6 @@
 
 body {
   background-color: #f4f1e7;
+  width: 100vw;
+  height: 100vh;
 }
