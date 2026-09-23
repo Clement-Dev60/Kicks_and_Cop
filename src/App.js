@@ -1,3 +1,5 @@
+import "./App.css";
+import Card from "./Components/Card/CardSneaker";
 import Herosection from './Components/Herosection/Herosection';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -24,6 +26,7 @@ function App() {
       </header>
       <div>
         <Herosection />
+        <Card />
       </div>
       <Footer />
     </div>
