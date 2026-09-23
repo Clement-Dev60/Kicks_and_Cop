@@ -15,6 +15,7 @@ import DHLIcon from '../../Assets/images/icons/dhl-icon.png';
 const translations = {
     fr: {
         about: 'À propos de KICK & COP',
+        carriers: 'Nos transporteurs',
         description: 'KICK & COP est votre destination incontournable pour trouver des chaussures élégantes, confortables et adaptées à toutes les occasions.',
         contact: 'Nous contacter',
         email: 'Adresse e-mail',
@@ -27,6 +28,7 @@ const translations = {
     },
     en: {
         about: 'About KICK & COP',
+        carriers: 'Our carriers',
         description: 'KICK & COP is your go-to destination for elegant, comfortable shoes suitable for every occasion.',
         contact: 'Contact us',
         email: 'Email address',
@@ -39,6 +41,7 @@ const translations = {
     },
     es: {
         about: 'Sobre KICK & COP',
+        carriers: 'Nuestros transportistas',
         description: 'KICK & COP es tu destino ideal para encontrar zapatos elegantes, cómodos y adecuados para cualquier ocasión.',
         contact: 'Contáctanos',
         email: 'Correo electrónico',
@@ -51,6 +54,7 @@ const translations = {
     },
     it: {
         about: 'Informazioni su KICK & COP',
+        carriers: 'I nostri corrieri',
         description: 'KICK & COP è la tua destinazione per trovare scarpe eleganti, comode e adatte a ogni occasione.',
         contact: 'Contattaci',
         email: 'Indirizzo e-mail',
@@ -63,6 +67,7 @@ const translations = {
     },
     de: {
         about: 'Über KICK & COP',
+        carriers: 'Unsere Versanddienstleister',
         description: 'KICK & COP ist dein Ziel für elegante, bequeme Schuhe, die zu jedem Anlass passen.',
         contact: 'Kontaktieren Sie uns',
         email: 'E-Mail-Adresse',
@@ -75,6 +80,7 @@ const translations = {
     },
     ar: {
         about: 'حول KICK & COP',
+        carriers: 'شركات الشحن الخاصة بنا',
         description: 'KICK & COP هو وجهتك للعثور على أحذية أنيقة ومريحة ومناسبة لجميع المناسبات.',
         contact: 'اتصل بنا',
         email: 'البريد الإلكتروني',
@@ -87,6 +93,7 @@ const translations = {
     },
     zh: {
         about: '关于 KICK & COP',
+        carriers: '我们的承运商',
         description: 'KICK & COP 是您寻找适合各种场合的时尚、舒适鞋子的理想之选。',
         contact: '联系我们',
         email: '电子邮箱',
