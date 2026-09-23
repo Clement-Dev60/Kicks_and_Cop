@@ -209,7 +209,6 @@ footer a:hover {
 }
 .App-header {
 	background-color: #f4f1e7;
-	min-height: 100vh;
 }
 .form-field input::placeholder {
 	color: #a3a397;
