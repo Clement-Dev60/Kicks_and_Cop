@@ -3,6 +3,70 @@
 	--ink: #20231f;
 	--muted: #74776d;
 	--paper: #f4f1e7;
+	--footer-border: rgba(244, 241, 231, 0.14);
+}
+
+footer {
+	align-items: center;
+	background: #f3eeeee4;
+	border-top: 4px solid var(--accent);
+	color: var(--paper);
+	display: flex;
+	flex-direction: column;
+	padding: 4.5rem 1.5rem 1.5rem;
+}
+
+footer .footer-container {
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr));
+	max-width: 1180px;
+	padding: 0 0 3.5rem;
+	width: 100%;
+}
+
+footer .footer-column {
+	min-width: 0;
+}
+
+footer p {
+	color: var(--ink);
+	font-size: 0.92rem;
+	line-height: 1.7;
+	margin: 0;
+	max-width: 34rem;
+}
+
+footer h3 {
+	color: var(--ink);
+	font-size: 0.78rem;
+	letter-spacing: 0.14em;
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+}
+
+.footer-brand-accent {
+	color: var(--accent);
+}
+
+footer a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+footer a:hover {
+	color: var(--paper);
+}
+
+.question-icon,
+.phone-icon,
+.footer-column > .payment-icon {
+	height: 2rem;
+	margin: 0 0 1.35rem;
+	object-fit: contain;
+	opacity: 0.9;
+	width: 2rem;
 }
 
 .register-page {
@@ -64,38 +128,110 @@
 	color: var(--ink);
 }
 
+.footer-container:nth-of-type(2) {
+	border-top: 1px solid var(--footer-border);
+	grid-template-columns: 1.3fr 2fr;
+	padding: 2rem 0;
+}
+
+.footer-container:nth-of-type(2) .footer-column:last-child {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+}
+
+.footer-container:nth-of-type(2) .footer-column:last-child h3 {
+	flex-basis: 100%;
+	margin-bottom: 0;
+}
+
+.la-poste-logo,
+.dhl-logo {
+	height: 2rem;
+	margin: 0;
+	object-fit: contain;
+	padding: 0.25rem 0.55rem;
+	width: auto;
+}
+
+.payment-icons,
+.social-icons {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.footer-language {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	justify-content: center;
+	max-width: 1180px;
+	padding: 1.5rem 0 0;
+	width: 100%;
+}
+
+.language-button {
+	background: var(--ink);
+	border: 1px solid var(--accent);
+	border-radius: 4px;
+	color: rgba(244, 241, 231, 0.72);
+	cursor: pointer;
+	font-size: 0.75rem;
+	font-weight: 600;
+	min-width: 40px;
+	padding: 7px 9px;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.language-button:hover,
+.language-button.active {
+	background-color: var(--accent);
+	border-color: var(--accent);
+	color: var(--ink);
+}
+
+.payment-icons img,
+.social-icons img {
+	height: 2rem;
+	margin: 0;
+	object-fit: contain;
+	width: auto;
+}
 .App-header {
 	background-color: #f4f1e7;
 	min-height: 100vh;
-
 }
-  .form-field input::placeholder {
-    color: #a3a397;
-  }
+.form-field input::placeholder {
+	color: #a3a397;
+}
 
-	.form-field input:focus {
-		border-color: #918d43;
+.form-field input:focus {
+	border-color: #918d43;
+}
+
+.form-error {
+	color: #a13d35;
+	font-size: 0.8rem;
+}
+
+.register-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
 	}
-
-	.form-error {
-		color: #a13d35;
-		font-size: 0.8rem;
+	to {
+		transform: rotate(360deg);
 	}
-
-	.register-button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: calc(10px + 2vmin);
-		color: white;
-	}
-
-	@keyframes App-logo-spin {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
+}

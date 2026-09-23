@@ -6,6 +6,7 @@ import Favoris from './Views/Favoris/Favoris'
 import Account from './Views/Account/Account'
 import Register from './Components/auth/Register';
 import Connexion from './Components/auth/Connexion/Connexion';
+import Footer from './Components/layout/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/connexion" element={<Connexion />} />
         </Routes>
       </header>
+      <Footer /> 
     </div>
   );
 }
