@@ -11,6 +11,10 @@
 	--footer-border: rgba(244, 241, 231, 0.14);
 }
 
+main {
+	margin-top: 75px;
+}
+
 footer {
 	align-items: center;
 	background: #f3eeeee4;
