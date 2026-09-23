@@ -1,4 +1,5 @@
-import { Routes, Route} from 'react-router-dom';
+import Herosection from './Components/Herosection/Herosection';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Views/Home/Home'
@@ -21,8 +22,12 @@ function App() {
           <Route path="/connexion" element={<Connexion />} />
         </Routes>
       </header>
-      <Footer /> 
+      <div>
+        <Herosection />
+      </div>
+      <Footer />
     </div>
+
   );
 }
 
