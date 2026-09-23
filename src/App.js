@@ -1,5 +1,6 @@
+import { useState } from "react";
 import "./App.css";
-import Card from "./Components/Card/CardSneaker";
+import Card from "./Components/CardSneaker/CardSneaker";
 import Herosection from './Components/Herosection/Herosection';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -10,8 +11,11 @@ import Account from './Views/Account/Account'
 import Register from './Components/auth/Register';
 import Connexion from './Components/auth/Connexion/Connexion';
 import Footer from './Components/layout/Footer';
+import ModalSneaker from "./Components/ModalSneaker/ModalSneaker";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +30,8 @@ function App() {
       </header>
       <div>
         <Herosection />
-        <Card />
+        <Card setIsOpen={setIsOpen} />
+        <ModalSneaker isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       <Footer />
     </div>

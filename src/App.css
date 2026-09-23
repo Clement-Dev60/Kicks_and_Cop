@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 :root {
 	--accent: #c8c374;
@@ -238,5 +238,11 @@ footer a:hover {
 	}
 	to {
 		transform: rotate(360deg);
+	}
+
+	body {
+		background-color: #f4f1e7;
+		width: 100vw;
+		height: 100vh;
 	}
 }
