@@ -19,3 +19,13 @@ export default async function api(param = "", methode = "GET", body = "") {
     return false;
   }
 }
+
+// Exemple d'utilisation
+
+// const call = async () => {
+//   const res = await api("POST", "firstname=Nicolas&lastname=Texier");
+//   return res;
+//   // document.getElementById('pres').textContent = json.error;
+// };
+
+// call();
