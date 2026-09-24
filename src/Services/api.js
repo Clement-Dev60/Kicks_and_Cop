@@ -22,10 +22,10 @@ export default async function api(param = "", methode = "GET", body = "") {
 
 // Exemple d'utilisation
 
-// const call = async () => {
-//   const res = await api("POST", "firstname=Nicolas&lastname=Texier");
-//   return res;
-//   // document.getElementById('pres').textContent = json.error;
-// };
+const call = async () => {
+  const res = await api("User", "POST", "firstname=Nicolas&lastname=Texier");
+  console.log(res.data);
+  return res;
+};
 
-// call();
+call();
