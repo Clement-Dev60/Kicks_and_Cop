@@ -1,54 +1,69 @@
 .card {
-  width: 17rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem;
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  cursor: pointer;
+	width: 17rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.5rem;
+	padding: 1.5rem;
+	background-color: white;
+	border-radius: 0.5rem;
+	cursor: pointer;
 }
 
 .cardTop {
-  width: 100%;
-  height: 14rem;
-  padding-bottom: 1rem;
-  background-color: white;
-  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
-  border-radius: 0.3rem;
-  position: relative;
+	width: 100%;
+	height: 14rem;
+	padding-bottom: 1rem;
+	background-color: white;
+	box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+	margin-bottom: 1rem;
+	border-radius: 0.3rem;
+	position: relative;
 }
 
 .cardImage {
-  width: 95%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
+	width: 95%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
 }
 
 .card:hover .cardImage {
-  transform: translate(-50%, -60%) rotate(25deg) scale(1.7);
-  -webkit-filter: drop-shadow(5px 5px 10px #222);
-  filter: drop-shadow(5px 5px 10px #222);
-  cursor: pointer;
+	transform: translate(-50%, -60%) rotate(25deg) scale(1.7);
+	-webkit-filter: drop-shadow(5px 5px 10px #222);
+	filter: drop-shadow(5px 5px 10px #222);
+	cursor: pointer;
 }
 
 .cardBottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .cardName {
-  width: 100%;
-  margin-bottom: 0.8rem;
+	width: 100%;
+	margin-bottom: 0.8rem;
 }
 
 .cardPrice {
-  width: 100%;
-  font-size: 1.1rem;
+	width: 100%;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 640px) {
+	.card {
+		width: 10rem;
+		height: 15rem;
+	}
+  
+	.cardName {
+		font-size: 16px;
+	}
+
+	.cardPrice {
+		font-size: 15px;
+	}
 }
