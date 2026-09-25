@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 function Connexion() {
+
     return (
         <section className='register-page'>
             <div>
@@ -18,10 +19,10 @@ function Connexion() {
 
                     <div className="form-field">
                         <label for="mdp">Entrez votre Mot de Passe&nbsp;: </label>
-                        <input type="text" name="mdp" id="mdp" placeholder='8 caractères minimum' required />
-
+                        <input type="password" name="mdp" id="mdp" placeholder='8 caractères minimum' required />
                     </div>
-                    <button className="register-button" type="button">Se connecter</button>
+
+                    <Link className="register-button" to="/">Se connecter</Link>
                 </form>
             </div >
         </section >
