@@ -27,8 +27,3 @@
 	}
 }
 
-@media (max-width: 380px) {
-	.sneakersGrid {
-		grid-template-columns: 1fr;
-	}
-}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import '../../App.css';
+import "./Home.css";
 import Card from "../../Components/CardSneaker/CardSneaker";
 import Herosection from '../../Components/Herosection/Herosection';
 import ModalSneaker from "../../Components/ModalSneaker/ModalSneaker";
