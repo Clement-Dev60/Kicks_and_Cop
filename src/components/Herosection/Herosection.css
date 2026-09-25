@@ -9,8 +9,9 @@
 
 .hero__container {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	width: 98%;
 	height: 90%;
 }
@@ -19,8 +20,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
-	height: 40%;
+	width: 100%;
+	height: 78%;
 }
 
 .hero__image {
@@ -37,7 +38,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 0.8vw;
-	width: 30%;
+	width: auto;
 	padding: 1.5vw 2vw;
 
 	text-align: center;
