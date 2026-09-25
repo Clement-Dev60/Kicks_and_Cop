@@ -10,6 +10,7 @@ function Home() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [sneakers, setSneakers] = useState([]);
+    const [featuredSneaker, setFeaturedSneaker] = useState(null);
     const [selectedSneaker, setSelectedSneaker] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState("");
@@ -25,7 +26,12 @@ function Home() {
             }
 
             const data = response.data;
-            setSneakers(Array.isArray(data) ? data : data.sneakers || data.data || []);
+            const loadedSneakers = Array.isArray(data) ? data : data.sneakers || data.data || [];
+
+            setSneakers(loadedSneakers);
+            setFeaturedSneaker(
+                loadedSneakers[Math.floor(Math.random() * loadedSneakers.length)] || null
+            );
             setIsLoading(false);
         }
 
@@ -34,7 +40,7 @@ function Home() {
 
     return (
         <div className="homepage">
-            <Herosection />
+            <Herosection sneaker={featuredSneaker} />
             {isLoading && <p>Chargement des sneakers...</p>}
             {error && <p>{error}</p>}
             {!isLoading && !error && (
