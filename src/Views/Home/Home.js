@@ -36,14 +36,18 @@ function Home() {
             <Herosection />
             {isLoading && <p>Chargement des sneakers...</p>}
             {error && <p>{error}</p>}
-            {!isLoading && !error && sneakers.map((sneaker) => (
-                <Card
-                    key={sneaker.id}
-                    sneaker={sneaker}
-                    setIsOpen={setIsOpen}
-                    setSelectedSneaker={setSelectedSneaker}
-                />
-            ))}
+            {!isLoading && !error && (
+                <div className="sneakersGrid">
+                    {sneakers.map((sneaker) => (
+                        <Card
+                            key={sneaker.id}
+                            sneaker={sneaker}
+                            setIsOpen={setIsOpen}
+                            setSelectedSneaker={setSelectedSneaker}
+                        />
+                    ))}
+                </div>
+            )}
             <ModalSneaker
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}

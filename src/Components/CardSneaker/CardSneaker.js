@@ -7,7 +7,8 @@ const Card = ({ sneaker, setIsOpen, setSelectedSneaker }) => {
     setIsOpen(true);
   }
 
-  const image = sneaker.image_url || asicsKayano;
+  const image = sneaker.image_url
+    || (sneaker.image ? `http://localhost/assets/Img/${sneaker.image}` : asicsKayano);
   const name = sneaker.sneaker_name || sneaker.name || sneaker.nom || "Sneaker sans nom";
   const price = sneaker.price ?? sneaker.prix;
 

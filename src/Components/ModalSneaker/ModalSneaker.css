@@ -150,7 +150,10 @@ input:focus {
 }
 
 .modalImage {
-  width: 30rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 2rem;
 }
 
 .container {
@@ -159,4 +162,102 @@ input:focus {
   height: 20rem;
   background-color: red;
   align-items: center;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 64rem;
+  max-height: 90vh;
+  height: auto !important;
+  padding: 2rem;
+}
+
+.modalInfo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 28rem;
+}
+
+.modalImageContainer {
+  height: 26rem;
+  border-radius: 0.35rem;
+  background: #f2f0e7;
+  overflow: hidden;
+}
+
+.modalDetails {
+  padding: 1rem;
+}
+
+.modalEyebrow {
+  margin: 0 0 0.8rem;
+  color: #c8c374;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.modalDetails h2 {
+  margin: 0;
+  color: #20231f;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.modalDescription {
+  margin: 1.5rem 0;
+  color: #74776d;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.modalPrice {
+  margin: 0;
+  color: #20231f;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.modalContent .closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  left: auto;
+  z-index: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #20231f;
+  color: #f4f1e7;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.modalContent .closeButton:hover {
+  background: #c8c374;
+  color: #20231f;
+}
+
+@media (max-width: 640px) {
+  .modal > div {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+
+  .modalInfo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: 0;
+  }
+
+  .modalImageContainer {
+    height: 15rem;
+  }
+
+  .modalDetails {
+    padding: 0.5rem;
+  }
 }
