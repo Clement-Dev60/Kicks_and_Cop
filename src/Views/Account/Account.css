@@ -14,6 +14,7 @@
 }
 
 .mail {
+	margin-top: 2%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,11 +22,16 @@
 
 .email {
 	height: 20%;
-	margin-left: 5%;
+	margin-left: 2%;
 	border-radius: 4px;
 	border: none;
 	font-size: 16px;
 	background-color: #dddcd9;
+	width: 50%;
+}
+
+.email:focus {
+	outline: 2px solid #c1bb61;
 }
 
 .save-btn {
@@ -41,7 +47,7 @@
 }
 
 .save-btn:hover:not(:disabled) {
-	background-color: #ff6a1a;
+	background-color: #c1bb61;
 }
 
 .save-btn:disabled {
@@ -64,6 +70,7 @@
 
 .favoris-preview {
 	display: flex;
+	justify-content: center;
 	gap: 1rem;
 	margin-top: 1rem;
 	flex-wrap: wrap;
@@ -95,7 +102,7 @@
 
 .favori-card span {
 	font-size: 0.85rem;
-	color: #ff6a1a;
+	color: #c1bb61;
 	font-weight: 600;
 }
 
@@ -112,5 +119,17 @@
 }
 
 .see-all-btn:hover {
-	background-color: #ff6a1a;
+	background-color: #c1bb61;
+}
+
+@media (max-width: 640px) {
+	h2 {
+		font-size: 20px;
+	}
+	.mail {
+		justify-content: left;
+	}
+	.email {
+		width: 80%;
+	}
 }

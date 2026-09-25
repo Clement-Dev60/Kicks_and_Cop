@@ -80,6 +80,7 @@ function Account() {
                         <div className='mail'>
                             <p>Email : </p>
                             <input
+                                name='email'
                                 type='email'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
