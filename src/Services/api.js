@@ -1,12 +1,17 @@
 export default async function api(param = "", methode = "GET", body = "") {
   try {
-    const res = await fetch(`http://localhost/${param}`, {
+    const options = {
       method: methode,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: body,
-    });
+    };
+
+    if (methode !== "GET" && methode !== "HEAD" && body) {
+      options.body = body;
+    }
+
+    const res = await fetch(`http://localhost/${param}`, options);
 
     const data = await res.json();
 
@@ -19,13 +24,3 @@ export default async function api(param = "", methode = "GET", body = "") {
     return false;
   }
 }
-
-// Exemple d'utilisation
-
-const call = async () => {
-  const res = await api("User", "POST", "firstname=Nicolas&lastname=Texier");
-  console.log(res.data);
-  return res;
-};
-
-call();
