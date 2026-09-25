@@ -235,17 +235,18 @@ footer a:hover {
 	color: white;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
+@media (max-width: 640px) {
+	.footer-container {
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
-	to {
-		transform: rotate(360deg);
-	}
-
-	body {
-		background-color: #f4f1e7;
-		width: 100vw;
-		height: 100vh;
+	.footer-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 }

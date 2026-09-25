@@ -1,77 +1,87 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25vw;
-    background: linear-gradient(to right, #ffffff, #c8c374);
-    overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25vw;
+	background: linear-gradient(to right, #ffffff, #c8c374);
+	overflow: hidden;
 }
 
 .hero__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 98%;
-    height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 98%;
+	height: 90%;
 }
 
 .hero__media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 40%;
 }
 
 .hero__image {
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    transform: scaleX(-1);
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+	transform: scaleX(-1);
 }
 
 .hero__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8vw;
-    width: 30%;
-    margin-right: 10%;
-    padding: 1.5vw 2vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8vw;
+	width: 30%;
+	padding: 1.5vw 2vw;
 
-
-    text-align: center;
+	text-align: center;
 }
 
 .hero__title {
-    margin: 0;
-    color: #fff;
-    font-size: clamp(14px, 1.8vw, 28px);
-    font-weight: bold;
+	margin: 0;
+	color: #fff;
+	font-size: clamp(14px, 1.8vw, 28px);
+	font-weight: bold;
 }
 
 .hero__text {
-    margin: 0;
-    color: #c5b67d;
-    font-size: clamp(12px, 1.3vw, 20px);
-    font-weight: bold;
+	margin: 0;
+	color: #c5b67d;
+	font-size: clamp(12px, 1.3vw, 20px);
+	font-weight: bold;
 }
 
 .hero__button {
-    padding: 0.6vw 1vw;
-    background-color: #3a393b;
-    border-radius: 5px;
-    color: #fff;
-    font-family: monospace;
-    font-size: clamp(11px, 1vw, 16px);
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+	padding: 0.6vw 1vw;
+	background-color: #3a393b;
+	border-radius: 5px;
+	color: #fff;
+	font-family: monospace;
+	font-size: clamp(11px, 1vw, 16px);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
 }
 
 .hero__button:hover {
-    background-color: #c8c374;
-    color: #3a393b;
+	background-color: #c8c374;
+	color: #3a393b;
+}
+
+@media (max-width: 640px) {
+	.hero {
+		height: 60vw;
+	}
+
+	.hero__content {
+		margin-right: 2%;
+	}
 }
