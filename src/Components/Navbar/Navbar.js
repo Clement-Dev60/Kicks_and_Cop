@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/Img/kick_and_cop_logo_simple.png';
+import logo from '../../Assets/Img/kick_and_cop_logo_simple_gold.png';
 import './Navbar.css'
 import { IoHeartOutline, IoPersonOutline } from 'react-icons/io5'
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
